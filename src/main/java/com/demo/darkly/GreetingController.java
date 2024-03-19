@@ -1,5 +1,6 @@
 package com.demo.darkly;
 
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,7 +14,7 @@ public class GreetingController {
 	protected LDBean ldb;
 
 	@GetMapping("/")
-	public String home(Model model) {
+	public String home(Model model, HttpSession session) {
 		model.addAttribute("homePromotion", ldb.homePagePromotion());
 		model.addAttribute("homeMenuVariant", ldb.homeMenuVariant());
 		model.addAttribute("accountFlag", ldb.accountFlag());
