@@ -1,0 +1,17 @@
+app:
+  sdkKey: sdk-1a97914f-3efb-4710-8438-d3824053a3c2
+
+ajp:
+  port: 9090
+  enabled: true
+
+spring:
+  thymeleaf: # Thymeleaf
+    cache: false
+    mode: HTML
+    encoding: UTF-8
+    prefix: file:src/main/resources/templates/
+  resources: # Static resources
+    static-locations: file:src/main/resources/static/
+    cache:
+      period: 0

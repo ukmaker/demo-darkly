@@ -1,0 +1,61 @@
+.home-promotion {
+    background: #da0064;
+    height: 120px;
+    text-align: center;
+    margin: 20px;
+    width: 50%;
+}
+
+body {
+    color: white;
+    font-family: 'Arial';
+}
+
+.home-content {
+    background: #414bb2;
+    height: 120px;
+    text-align: center;
+    margin: 20px;
+    width: 50%;
+}
+
+.menu-bar span {
+    border: 1px outset white;
+    height: 30px;
+    font-size: 12px;
+}
+
+    .home-logo img {
+        width: 85px;
+        height: 50px;
+        vertical-align: middle;
+    }
+
+    .home-logo {
+        color: black;
+        width: 50%;
+    }
+
+.menu-bar, .menu-body {
+    padding-top: 10px;
+}
+
+.menu-item {
+    margin-top: 2px;
+    padding: 6px;
+    width: 24px;
+    display: inline;
+    border: 1px outset white;
+        font-size: 12px;
+}
+
+.home-menu-container-b {
+    background: #0CA789;
+}
+
+.account-button {
+    display: inline;
+    float: right;
+    color: white;
+    background: #414bb2;
+}

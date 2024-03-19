@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>ABC Home Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/styles.css"
+          th:href="@{css/styles.css}"/></head>
+<style>
+
+
+</style>
+<body>
+    <div class="home-logo">
+        <img src="../static/images/img.png" th:src="@{images/img.png}" />
+        Shiny Widgets For Everyone
+        <div th:if="${accountFlag}" class="account-button">My Account</div>
+    </div>
+    <div th:if="${homePromotion}" class="home-promotion">
+        <br/>
+        Sign-up for Virtual Widgets Today! <br/>
+        20% Discount
+    </div>
+    <div class="home-content">
+        <br/>
+        ABC has been supplying the market with the shiniest widgets since 1820.
+        <br/>
+        We are the world leader in OEM widgets, with distributors in 37 countries.
+    </div>
+    <div th:class="*{homeMenuVariant}? 'home-content home-menu-container-b' : 'home-content home-menu-container'">
+        <div class="menu-bar">
+            <div class="menu-item">Self Assembly</div>
+            <div class="menu-item">Prefab</div>
+            <div class="menu-item">Virtual</div>
+            <div class="menu-item">Support</div>
+            <div class="menu-item">About Us</div>
+        </div>
+        <div class="menu-body">
+            <br/>
+            Learn more about how our widgets can help your business.
+        </div>
+    </div>
+</body>
+</html>
